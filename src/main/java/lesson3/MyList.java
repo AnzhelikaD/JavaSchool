@@ -2,47 +2,6 @@ package lesson3;
 
 import java.util.*;
 
-/**
- * Created by David on 20.07.2018.
- */
-//public class MyArrayList<E> extends ArrayList<E> {
-//
-//    @Override
-//    public Iterator<E> iterator() {
-//        return super.iterator();
-//    }
-//
-//    private class ReverseIterator implements Iterator<E> {
-//        int cursor;
-//        int lastRet = -1;
-//        int expectedModCount = modCount;
-//
-//        public E next() {
-//            checkForComodification();
-//            int i = cursor;
-//            if (i >= size())
-//                throw new NoSuchElementException();
-//            Object[] elementData = ArrayList.this.elementData;
-//            if (i >= elementData.length)
-//                throw new ConcurrentModificationException();
-//            cursor = i + 1;
-//            return (E) elementData[lastRet = i];
-//        }
-//
-//        public boolean hasNext() {
-//            return cursor != 0;
-//        }
-//
-//        public void remove() {
-//
-//        }
-//
-//        final void checkForComodification() {
-//            if (modCount != expectedModCount)
-//                throw new ConcurrentModificationException();
-//        }
-//    }
-//}
 public class MyList<T> implements Iterable<T> {
 
     private ArrayList<T> arrayList;
