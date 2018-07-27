@@ -30,7 +30,6 @@ public class TextUtils {
         }
         text = text.replace('\uFEFF', ' ');
         text = text.trim();
-        System.out.println(text.charAt(0) + "второй " + text.charAt(1));
         String[] strings = text.split("\n");
         ArrayList<String> stringArrayList = new ArrayList<String>();
         for (String str: strings) {
