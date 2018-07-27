@@ -1,5 +1,8 @@
 package lesson4;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         CountMap<Integer> map = new CountMapImpl<Integer>();
@@ -29,5 +32,14 @@ public class Main {
         System.out.println(countMap.size());
         countMap.addAll(map);
         System.out.println(countMap.size());
+        System.out.println();
+
+        List<Integer> list = CollectionUtils.range(Arrays.asList(8,1,3,5,6, 4), 3, 6);
+        System.out.println(list);
+        list = CollectionUtils.limit(list, 3);
+        System.out.println(list);
+        System.out.println(CollectionUtils.containsAll(list, Arrays.asList(3, 5)));
+        System.out.println(CollectionUtils.containsAny(list, Arrays.asList(1, 2, 6)));
+
     }
 }
